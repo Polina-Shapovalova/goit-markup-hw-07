@@ -1,0 +1,20 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    transition: all 250ms linear;
+}
+
+.backdrop.is-hidden {
+    transition: all 250ms linear 350ms;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 250ms linear 0ms;
+}

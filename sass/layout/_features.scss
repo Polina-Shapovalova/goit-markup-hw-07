@@ -1,0 +1,51 @@
+.features-section {
+    padding: 95px 0 153px 0;
+}
+
+.features {
+    display: flex;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features-item {
+    width: 270px;
+}
+
+.features-title {
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121; 
+    display: block;
+    margin-top: 30px;
+}
+
+.features-title-item {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--accent-color-secondary);
+}
+
+.features-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.svg-features {
+    margin: 0;
+    padding: 20px 100px;
+    background-color: #F5F4FA;
+}
