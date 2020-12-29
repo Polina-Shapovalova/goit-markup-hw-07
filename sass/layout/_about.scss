@@ -17,22 +17,35 @@
     color: #212121;
 }
 
-.about-img-list {
-    display: flex;
-}
-
-.about-img-list .about-img {
-    position: relative;
-}
-
-.about-img:not(:last-child) {
-    margin-right: 30px;
-}
 
 .about-img {
     display: block;
     max-width: 100%;
     height: auto;
+
+    &-list {
+        display: flex;
+    }
+    
+    &-list & {
+        position: relative;
+    }
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &-name{
+        font-family: var(--main-font);
+        font-style: 400;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:  #FFFFFF; 
+    }
 }
 
 .about-bg-img-name {   
@@ -48,14 +61,3 @@
     background:rgba(47, 48, 58, 0.8);
 }
 
-.about-img-name{
-    font-family: var(--main-font);
-    font-style: 400;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color:  #FFFFFF; 
-}

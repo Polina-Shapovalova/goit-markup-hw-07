@@ -3,51 +3,53 @@
     padding: 94px 0;
 }
 
-.our-clients-list {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
 
 .our-clients {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}
 
-.our-clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    border: solid 1px #AFB1B8;
-    border-radius: 5%;
-    width: 170px;
-    height: 90px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &-list {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
 
-.our-clients-list:not(:last-child) {
-    margin-right: 30px;
-}
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 
-.our-clients-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: #afb1b8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border: solid 1px #AFB1B8;
+        border-radius: 5%;
+        width: 170px;
+        height: 90px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.our-clients-link:hover .our-clients-logo,
-.our-clients-link:focus .our-clients-logo {
-    fill: var(--accent-color);
-}
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+        }
+    }
+    
+    
+    &-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #afb1b8;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.our-clients-link:hover,
-.our-clients-link:focus {
-    border-color: var(--accent-color);
+        .our-clients-link:hover &,
+        .our-clients-link:focus & {
+            fill: var(--accent-color);
+        }
+    }
 }
 
 .logo-1 {

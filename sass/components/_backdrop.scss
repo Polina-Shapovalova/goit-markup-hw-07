@@ -8,13 +8,11 @@
     background-color: rgba(0, 0, 0, 0.2);
   
     transition: all 250ms linear;
+
+    &.is-hidden {
+        transition: all 250ms linear 350ms;
+    }
+    
 }
 
-.backdrop.is-hidden {
-    transition: all 250ms linear 350ms;
-}
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 250ms linear 0ms;
-}

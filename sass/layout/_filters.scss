@@ -1,5 +1,10 @@
 .filter-buttoms {
     padding: 0 0 34px 0;
+
+    &-list {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .filter-btn {
@@ -16,22 +21,17 @@
     cursor: pointer;
     height: 38px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color:  #FFFFFF;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .btn:not(:last-child) {
     margin-right: 8px;
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-    color:  #FFFFFF;
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.filter-buttoms-list {
-    display: flex;
-    justify-content: center;
 }
 
 .current {
